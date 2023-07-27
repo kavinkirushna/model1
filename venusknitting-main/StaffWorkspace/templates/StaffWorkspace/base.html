@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Venus Knitting</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="{% static 'StaffWorkspace/img/favicon.png' %}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'StaffWorkspace/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'StaffWorkspace/css/base.css' %}">
+  <script src="{% static 'StaffWorkspace/js/bootstrap.min.js' %}"></script>
+  {% block extraCSS %}{% endblock %}
+  <noscript>
+        <style type="text/css">
+            .container {color:#c1c1c1;}
+            .alert {display:block;}
+            .submitButton {display:none;}
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+        </style>    
+  </noscript>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #96c3ff, #ffffff);
+    
+  padding-top: 50px;
+  padding-bottom: 100px;
+     
+
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <a href="{% url 'home' %}">
+            <style>
+                img {
+                    margin-top: -50px; /* adjust the value as needed */
+                }
+            </style>
+            
+            <img src="https://t3.ftcdn.net/jpg/05/18/32/14/360_F_518321485_Nb3fnUewOORTmwWP9QhzMuclohxKhS2j.jpg" alt="good logo which contains VKM" style="width: 500px; height: 115px;">
+            
+
+
+        </a>       
+    </div>
+    <div class="alert">
+        <strong>Danger!</strong> Do not submit any data. Reset your browser or <a href="https://www.enable-javascript.com/" target="_blank" style= "color: white;"><u>enable JavaScript.</u> </a>
+    </div>
+    {% block content %}
+    {% endblock %}
+    
+    
+    
+    <div class="footer">
+        
+        
+        <br/>
+        
+ʀᴇɢᴏꜰꜰ:49/3 ᴋᴀʟɪʏᴀᴘᴘᴀ ɴᴀɢᴀʀ 2ɴᴅ ꜱᴛʀᴇᴇᴛ,ᴠɪᴊᴀʏᴀᴘᴜʀᴀᴍ ᴋᴀɴɢᴇʏᴀᴍ ʀᴏᴀᴅ, ᴛɪʀᴜᴘᴘᴜʀ 
+<br>ʙʀᴀɴᴄʜ ᴏꜰꜰ :431/1ᴇ2, ʀᴀᴊᴀ ɴᴀɢᴀʀ ᴠᴇᴇʀᴀᴘᴀɴᴅɪ,ᴛɪʀᴜᴘᴘᴜʀ</br> 
+ᴇᴍᴀɪʟ: ᴠᴇɴᴜꜱᴋɴɪᴛᴛɪɴɢ1@ɢᴍᴀɪʟ.ᴄᴏᴍ
+        <p>
+        </p>  
+    </div> 
+</body>
+</html>
